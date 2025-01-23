@@ -18,10 +18,12 @@ h1 {
     font-size: 1.5rem;
     font-weight: 700;
     margin: 33px 0px 27px 0px;
+    text-align: center;
 }
 
 .buttonSocial {
-    display: block;
+    display: flex;
+    align-items: center;
     border-radius: 50px;
     width: 255px;
     margin-bottom: 27px;
@@ -29,33 +31,25 @@ h1 {
     color: #161414;
     font-weight: 500;
     font-size: 1.125rem;
-    position: relative;
-    height: 40px;
     cursor: pointer;
+    padding-left: 35px ;
 
     img{
-        position: absolute;
-        height: 20px;
-        left: 42px;
-        top: 9px;
+        height: 24px;
     }
 
     p{
-        position: absolute;
-        left: 80px;
-        top: 12px;
         font-size: 1.125rem;
-        line-height: 1.125rem;
+        padding-left: 15px;
     }
 }
 .instaButton {
     background-color: #00000070; 
 }
 
-#content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+#contentParent {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
